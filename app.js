@@ -16,7 +16,18 @@ function Projects (title, client, author, published, description, tech, image){
 
 
 
-// next i'll need...maybe not a prototype, but some function that pushes items through the constructor so that my slideshow can populate.
+// next i'll need a prototype.. some function that pushes items through the constructor so that my slideshow can populate.
+//
+// that will ultimately lead to something like this: rawData.forEach(function(ele) {
+//   articles.push(new Article(ele));
+// })
+
+
+// once it's pushed items into the constructor and populated the myProj array, i then need them to push to the section on the index page (the slideshow).
+// which will be something like this:
+// articles.forEach(function(a){
+//   $('#articles').append(a.toHtml())
+// });
 
 // i need a function to display the slideshow, and to allow users to scroll back and forth through all the items in it.  so there will be some JQ animations on that, especially since there will be a hover element on each item.
 
