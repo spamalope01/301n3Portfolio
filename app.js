@@ -1,38 +1,55 @@
-// i'm going to need a constructor.  I want to create a slideshow of projects that i've done.  each slide in the slideshow will represent a single project.  so the constructor is going to need things like: title, author, date published to the web, client name, description, languages/technologies used.  i can add to that later if i think of other qualities.
 var myProj = [];
 
-function Projects (title, client, author, published, description, tech, image){
-  this.title = title;
-  this.client = client;
-  this.author = author;
-  this.published = published;
-  this.description = description;
-  this.tech = tech;
-  this.image = image;
-  myProj.push(this);
 
+function Projects (proj){
+  this.title = proj.title;
+  this.client = proj.client;
+  this.author = proj.author;
+  this.published = proj.published;
+  this.description = proj.description;
+  this.tech = proj.tech;
+  this.image = proj.image;
+  this.category = proj.category;
+}
+
+Projects.prototype.toHtml = function() {
+  var $newProject = $('project.template').clone();
+  $newProject.removeClass('template');
+  console.log('i cloned it');
+  $newProject.attr('data-category', this.category);
+  $newProject.attr('data-author', this.author);
+  $newProject.find('h1').text(this.title);
+  $newProject.find('.clientName').text(this.client);
+  $newProject.find('.devDate').text(this.published);
+  $newProject.find('.projectDescription').text(this.description);
+  $newProject.find('.techUsed').text(this.tech);
+  $newProject.find('.image').text(this.image);
+  $newProject.append('<hr>');
+  return $newProject;
+  console.log($newProject);
 };
 
+oldProjects.forEach(function(ele) {
+  myProj.push(new Projects(ele));
+});
 
+myProj.forEach(function(tart){
+  $('#workDone').append(tart.toHtml());
+  // console.log('tart');
+});
 
+var projControl = {};
 
-// next i'll need a prototype.. some function that pushes items through the constructor so that my slideshow can populate.
-//
-// that will ultimately lead to something like this: rawData.forEach(function(ele) {
-//   articles.push(new Article(ele));
-// })
+projControl.navDisplayToggle = function() {
+  $('.globalNav').on('click', '.tab', function() {
+    console.log('navToggle');
+    $('.tab-content').hide();
+    $('#' + $(this).data('content')).show();
+  });
 
+  // $('.globalNav .tab:first').click();
+};
 
-// once it's pushed items into the constructor and populated the myProj array, i then need them to push to the section on the index page (the slideshow).
-// which will be something like this:
-// articles.forEach(function(a){
-//   $('#articles').append(a.toHtml())
-// });
-
-// i need a function to display the slideshow, and to allow users to scroll back and forth through all the items in it.  so there will be some JQ animations on that, especially since there will be a hover element on each item.
-
-
-// maybe i should have an admin type page where i can add new projects?  or should i keep that all on the 'back end'?  i wouldn't want that page visible to the public, so unless i hid it behind authentication...then i could have a form with all the fields needed for the constructor, allow image uploads, etc.
-
-
-// finally, naturally, i'll have to call these functions at the bottom like we did with the blog project.
+$(document).ready(function() {
+  projControl.navDisplayToggle();
+});
