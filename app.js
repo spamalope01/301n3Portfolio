@@ -13,17 +13,17 @@ function Projects (proj){
 }
 
 Projects.prototype.toHtml = function() {
-  var $newProject = $('project.template').clone();
+  var $newProject = $('section.template').clone();
   $newProject.removeClass('template');
   console.log('i cloned it');
   $newProject.attr('data-category', this.category);
   $newProject.attr('data-author', this.author);
-  $newProject.find('h1').text(this.title);
+  $newProject.find('.projectTitle').text(this.title);
   $newProject.find('.clientName').text(this.client);
   $newProject.find('.devDate').text(this.published);
-  $newProject.find('.projectDescription').text(this.description);
+  $newProject.find('.projectDescription').html(this.description);
   $newProject.find('.techUsed').text(this.tech);
-  $newProject.find('.image').text(this.image);
+  $newProject.find('.imageProj').html(this.image);
   $newProject.append('<hr>');
   return $newProject;
   console.log($newProject);
@@ -33,23 +33,20 @@ oldProjects.forEach(function(ele) {
   myProj.push(new Projects(ele));
 });
 
-myProj.forEach(function(tart){
-  $('#workDone').append(tart.toHtml());
-  // console.log('tart');
+myProj.forEach(function(a){
+  $('#workDone').append(a.toHtml());
 });
 
-var projControl = {};
-
-projControl.navDisplayToggle = function() {
-  $('.globalNav').on('click', '.tab', function() {
+navDisplayToggle = function() {
+  $('#globalNav').on('click', 'li', function() {
     console.log('navToggle');
     $('.tab-content').hide();
     $('#' + $(this).data('content')).show();
   });
 
-  // $('.globalNav .tab:first').click();
+  $('.globalNav .tab:first').click();
 };
 
 $(document).ready(function() {
-  projControl.navDisplayToggle();
+  navDisplayToggle();
 });

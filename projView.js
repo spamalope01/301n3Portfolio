@@ -1,7 +1,7 @@
 var projControl = {};
 
 projControl.navDisplayToggle = function() {
-  $('.globalNav').on('click', '.tab', function() {
+  $('.globalNav').on('click', 'li', function() {
     console.log('navToggle');
     $('.tab-content').hide();
     $('#' + $(this).data('content')).show();
