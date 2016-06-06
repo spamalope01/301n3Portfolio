@@ -4,42 +4,48 @@
     <meta charset="utf-8">
     <title>Jonathan Daniel Web Devloper</title>
     <link rel="stylesheet" href="vendor/normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Styles/icons.css">
+    <link rel="stylesheet" href="Styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   </head>
   <body>
-    <nav id="globalNav">
-      <ul>
-        <li class="tab" data-content="home"><a href="#"> Home</a></li>
-        <li class="tab" data-content="about"><a href="#"> About Me</a></li>
-        <li class="tab" data-content=""><a href="#"> Contact Me</a></li>
-      </ul>
-    </nav>
+    <header>
+      <div class="topNav">
+        <div class="icon-menu"></div>
+        <nav id="globalNav">
+          <ul>
+            <li class="tab navLink" data-content="home"><a href="#">Home</a></li>
+            <li class="tab navLink" data-content="about"><a href="#">About Me</a></li>
+            <li class="tab navLink" data-content=""><a href="#">Contact Me</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
       <section id="home" class="tab-content">
         <section id="filters">
               <select id="projectSelector">
                 <option value="">-- Choose a Project --</option>
               </select>
-        </section>
-        <section>
-          <select id="categorySelector">
-            <option value="">-- Chose a Category --</option>
-          </select>
-
-
-        </section>
-          <section id="workDone">
-            <section class="template" data-category="clientWork">
-                <section class="imageProj"></section>
-                <section class="projectTitle"></section>
-                <section class="clientName"></section>
-                <section class="techUsed"></section>
-                <section class="projectDescription"></section>
-            </article>
+              <select id="categorySelector">
+                <option value="">-- Chose a Category --</option>
+              </select>
+              </section>
+              <section id="workDone">
+                <section class="template" data-category="clientWork">
+                  <section class="imageProj"></section>
+                  <section class="projectTitle"></section>
+                  <section class="clientName"></section>
+                  <section class="techUsed"></section>
+                  <section class="projectDescription"></section>
+                </article>
+              </section>
+            </section>
           </section>
         </section>
-      </section>
+
+
+
 
 
 
