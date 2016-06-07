@@ -13,6 +13,11 @@ header {
   overflow: auto;
 }
 
+.titleHeadings {
+ float: left;
+ padding: 0 0 .5em 1em;
+}
+
 .icon-menu {
   display: inline-block;
   font-size: 3em;
@@ -76,22 +81,28 @@ footer {
     margin: 0 auto;
   }
 
+  header{
+    width: 100%;
+    height: 150px;
+  }
+
   .icon-menu {
     display: none;
   }
 
-    #globalNav ul {
-      text-align: center;
-    }
+  .globalNav ul {
+    text-align: center;
+    display: inline-block;
+  }
 
-    #globalNav li {
+    .globalNav li {
       display: inline;
       text-decoration: none;
       text-align: center;
       height: 20px;
     }
 
-    #globalNav li a {
+    .globalNav li a {
       display: inline-block;
       padding: 10px;
     }
