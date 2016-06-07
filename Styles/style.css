@@ -9,6 +9,28 @@ header {
   height: 10%;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
+.icon-menu {
+  display: inline-block;
+  font-size: 3em;
+  float: right;
+}
+
+.globalNav {
+  padding: 1em;
+}
+
+.globalNav ul {
+  display: none;
+}
+
+.burgerNav:hover {
+  display: inline-block;
+}
+
 #filters select {
   width: 100%;
 }
