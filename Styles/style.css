@@ -6,7 +6,7 @@ body {
 
 header {
   background-color: #a5eaf4;
-  height: 10%;
+  height: 5%;
 }
 
 .clearfix {
@@ -15,25 +15,30 @@ header {
 
 .titleHeadings {
  float: left;
- padding: 0 0 .5em 1em;
+ padding-left: 1em;
 }
 
 .icon-menu {
-  display: inline-block;
   font-size: 3em;
   float: right;
-}
-
-.globalNav {
-  padding: 1em;
 }
 
 .globalNav ul {
   display: none;
 }
 
-.burgerNav:hover {
-  display: inline-block;
+.globalNav:hover ul {
+  display: inline;
+}
+
+nav ul li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  /*padding: .5em .2em;*/
+  /*border-bottom: 1px solid #ccc;*/
+  display: inline;
+  float: left;
+  clear: left;
 }
 
 #filters select {
@@ -74,7 +79,7 @@ footer {
 
 
 /* Desktop */
-  @media only screen and (min-width: 960px) {
+  @media only screen and (min-width: 640px) {
 
   body {
     max-width: 960px;
@@ -83,7 +88,6 @@ footer {
 
   header{
     width: 100%;
-    height: 150px;
   }
 
   .icon-menu {
@@ -92,53 +96,64 @@ footer {
 
   .globalNav ul {
     text-align: center;
-    display: inline-block;
+    display: inline;
   }
 
-    .globalNav li {
-      display: inline;
-      text-decoration: none;
-      text-align: center;
-      height: 20px;
-    }
+  .globalNav li {
+    display: inline;
+    text-decoration: none;
+    height: 10%;
+  }
 
-    .globalNav li a {
-      display: inline-block;
-      padding: 10px;
-    }
+  .globalNav li a {
+    display: inline-block;
+    padding: 10px;
+  }
 
-    #filters select {
-      width: 30%;
-    }
+  #filters {
+    justify-content: center;
+    display: flex;
+  }
 
-    #categorySelector {
-      float: right;
-    }
+  #filters select {
+    justify-content: center;
+    display: flex;
+    width: 30%;
+    margin-top: 3em;
+  }
 
-    img {
-      width: 100%;
-      height: 600px;
-      text-align: center;
-    }
+  #categorySelector {
+    margin-left: 1em;
+  }
 
-    footer {
-      width: 100%;
-      border-top: 2px solid #666666;
-      background-color: #a5eaf4;
-    }
+  #workDone {
+    margin-top: 1.5em;
+  }
 
-    .copyright {
-      top: -250px;
-    }
+  img {
+    width: 100%;
+    height: 600px;
+    text-align: center;
+  }
 
-    .socmedia {
-      width: 60px;
-      height: 60px;
-    }
+  footer {
+    width: 100%;
+    border-top: 2px solid #666666;
+    background-color: #a5eaf4;
+  }
 
-    #social {
-      float: right;
-    }
+  .copyright {
+    top: -250px;
+  }
+
+  .socmedia {
+    width: 60px;
+    height: 60px;
+  }
+
+  #social {
+    float: right;
+  }
 
 
-    }
+  }
