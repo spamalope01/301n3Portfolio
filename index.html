@@ -8,6 +8,17 @@
     <link rel="stylesheet" href="Styles/icons.css">
     <link rel="stylesheet" href="Styles/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script id="myWork" type="text/x-handlebars-template">
+      {{#each projects}}
+      <section class="imageProj">{{{image}}}</section>
+      <section class="projectTitle">{{title}}</section>
+      <section class="clientName">{{client}}</section>
+      <section class="techUsed">{{tech}}</section>
+      <section class="projectDescription">{{{description}}}</section>
+      <hr />
+      {{/each}}
+    </script>
   </head>
   <body>
     <header class="clearfix">
@@ -36,17 +47,15 @@
               </select>
               </section>
               <section id="workDone">
-                <section class="template" data-category="clientWork">
+                <!-- <section class="template" data-category="clientWork">
                   <section class="imageProj"></section>
                   <section class="projectTitle"></section>
                   <section class="clientName"></section>
                   <section class="techUsed"></section>
                   <section class="projectDescription"></section>
-                </article>
-              </section>
+              </section> -->
             </section>
           </section>
-        </section>
 
 
 
