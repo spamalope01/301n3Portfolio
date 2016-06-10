@@ -1,0 +1,53 @@
+/* Header and Nav */
+
+.clearfix {
+  overflow: auto;
+}
+
+.titleHeadings {
+ float: left;
+ padding-left: 1em;
+}
+
+.icon-menu {
+  font-size: 3em;
+  float: right;
+}
+
+.globalNav ul {
+  display: none;
+}
+
+.globalNav:hover ul {
+  display: inline;
+}
+
+nav ul li {
+  margin-right: .4em;
+  font-size: 1.5em;
+  /*padding: .5em .2em;*/
+  /*border-bottom: 1px solid #ccc;*/
+  display: inline;
+  float: left;
+  clear: left;
+}
+
+/* Filters */
+
+#filters select {
+  width: 100%;
+}
+
+
+/* Footer */
+
+.socmedia {
+  width: 20px;
+  height: 20px;
+}
+
+footer {
+  width: 100%;
+  border-top: 2px solid #666666;
+  background-color: #a5eaf4;
+}
