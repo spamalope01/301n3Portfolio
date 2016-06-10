@@ -1,16 +1,22 @@
-/* need a google font */
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700);
 
 /*Mobile size*/
 
 body {
-  background-color: #6A88FF;
+  background: linear-gradient(#92fe9d, #00C9FF);
+}
+
+h1, h2, p, a{
+  font-family: Libre Baskerville;
 }
 
 header {
-  background-color: #a5eaf4;
   height: 5%;
 }
 
 img {
   width: 100%;
+  border: 1px solid white;
+  box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+  margin-bottom: 15px;
 }

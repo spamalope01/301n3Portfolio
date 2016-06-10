@@ -2,9 +2,9 @@
 var oldProjects = {
   projects: [
     {
-      title: "MedTracker",
-      client: "CodeFellows",
-      author: "Jonathan Daniel and Jessica Vasquez-Soltero",
+      title: "<h1>MedTracker</h1>",
+      client: "<h2>CodeFellows</h2>",
+      author: "<h3>Jonathan Daniel and Jessica Vasquez-Soltero</h3>",
       published: "5/31/2016",
       description: "<p>A web application directed at anyone who has medications they take or who acts as a caretaker for someone else who has several perscriptions.  This application allows users to maintain a running list of their medications, get reminders when they are overdue for taking a dose, indicate if they took or skipped a dose and receive positive reinforcement for taking their medications on time.</p>",
       tech: "HTML, CSS, JavaScript",

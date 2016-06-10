@@ -52,6 +52,14 @@ navDisplayToggle = function() {
   $('.globalNav .tab:first').click();
 };
 
+navBurgerShow = function() {
+  $('.icon-menu').on('click', function() {
+    $('nav ul').toggle();
+  });
+};
+
 $(document).ready(function() {
+  $('#about').hide();
   navDisplayToggle();
+  navBurgerShow();
 });
