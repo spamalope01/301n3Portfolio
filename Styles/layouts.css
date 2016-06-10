@@ -9,26 +9,26 @@
  padding-left: 1em;
 }
 
+.globalNav {
+  margin-top: 0;
+}
+
 .icon-menu {
   font-size: 3em;
   float: right;
 }
 
+
 .globalNav ul {
   display: none;
-}
-
-.globalNav:hover ul {
-  display: inline;
+  clear: left;
+  text-align: center;
 }
 
 nav ul li {
   margin-right: .4em;
-  font-size: 1.5em;
-  /*padding: .5em .2em;*/
-  /*border-bottom: 1px solid #ccc;*/
+  font-size: 1em;
   display: inline;
-  float: left;
   clear: left;
 }
 
@@ -49,5 +49,4 @@ nav ul li {
 footer {
   width: 100%;
   border-top: 2px solid #666666;
-  background-color: #a5eaf4;
 }
