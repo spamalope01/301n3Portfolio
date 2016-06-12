@@ -6,8 +6,18 @@ body {
   background: linear-gradient(#92fe9d, #00C9FF);
 }
 
-h1, h2, p, a{
+h1, h2, p, a {
   font-family: Libre Baskerville;
+}
+/*Targets Tech used */
+span {
+  font-family: Libre Baskerville;
+  font-weight: bold;
+}
+/*authorName used */
+.authorSpan {
+    font-family: Libre Baskerville;
+    font-weight: normal;
 }
 
 header {
