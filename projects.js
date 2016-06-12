@@ -14,7 +14,7 @@ var oldProjects = {
     {
       title: "<h1>Laboris</h1>",
       client: "<h2>Velit</h2>",
-      author: "Jonathan Daniel",
+      author: "<h3>By: <span class='authorSpan'>Jonathan Daniel</span></h3>",
       published: "4/22/2016",
       description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
       tech: "<span>Lanugages Used:</span> HTML, CSS, JavaScript",
@@ -24,7 +24,7 @@ var oldProjects = {
     {
       title: "<h1>LIPSUM</h1>",
       client: "<h2>LOREM</h2>",
-      author: "Jonathan Daniel",
+      author: "<h3>By: <span class='authorSpan'>Jonathan Daniel</span></h3>",
       published: "10/2/2015",
       description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
       tech: "<span>Lanugages Used:</span> HTML, CSS, JavaScript",
@@ -34,7 +34,7 @@ var oldProjects = {
     {
       title: "<h1>DOLOR</h1>",
       client: "<h2>Sit Amet</h2>",
-      author: "Jonathan Daniel",
+      author: "<h3>By: <span class='authorSpan'>Jonathan Daniel</span></h3>",
       published: "7/23/2015",
       description: "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
       tech: "<span>Lanugages Used:</span> HTML, CSS, JavaScript",
