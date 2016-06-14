@@ -15,7 +15,7 @@
   }
 
   .globalNav {
-    margin-top: 40px;
+    margin-top: 2.500em;
   }
 
   .globalNav ul {
@@ -35,7 +35,7 @@
 
   .globalNav li a {
     display: inline-block;
-    padding: 10px;
+    padding: 0.625em;
   }
 
   #filters {
@@ -60,8 +60,11 @@
 
   img {
     width: 100%;
-    height: 600px;
+    height: 37.500em;
     text-align: center;
+    border: 1px solid white;
+    box-shadow: -5px 6px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 15px;
   }
 
   footer {
@@ -74,8 +77,8 @@
   }
 
   .socmedia {
-    width: 60px;
-    height: 60px;
+    width: 3.750em;
+    height: 3.750em;
   }
 
   #social {
