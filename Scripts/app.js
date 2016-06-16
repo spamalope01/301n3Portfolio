@@ -13,15 +13,12 @@ function Projects (proj){
 }
 
 Projects.prototype.toHtml = function() {
-  // $(function () {
-  console.log('start function');
   var $templateScript = $('#myWork').html();
   var theTemplate = Handlebars.compile($templateScript);
-  var compiledHtml = theTemplate(oldProjects);
+  // var compiledHtml = theTemplate(oldProjects);
   $('#workDone').append(compiledHtml);
-  return theTemplate(this);
+  // return theTemplate(this);
 };
-
 
 myProj.forEach(function(a){
   $('#workDone').append(a.toHtml());
@@ -43,12 +40,27 @@ navBurgerShow = function() {
   });
 };
 
+fetchAll = function() {
+  if (localStorage.rawData) {
+    console.log('localStorage same');
+    Article.loadAll(JSON.parse(localStorage.rawData)
+    );
 
+  } else {
+    $.getJSON('/Scripts/projects.json', function(rawData) {
+      Article.loadAll(rawData);
+      var cache = JSON.stringify(rawData);
+      localStorage.setItem('localData', cache);
+      console.log('set localStorage');
 
+    });
+  }
+};
 
 
 $(document).ready(function() {
   navDisplayToggle();
   Projects.prototype.toHtml();
   navBurgerShow();
+  fetchAll();
 });
