@@ -42,7 +42,7 @@ navBurgerShow = function() {
 
 fetchAll = function() {
   if (localStorage.rawData) {
-    console.log('localStorage same');
+    console.log('it is in LS');
     Article.loadAll(JSON.parse(localStorage.rawData)
     );
 
@@ -51,7 +51,7 @@ fetchAll = function() {
       Article.loadAll(rawData);
       var cache = JSON.stringify(rawData);
       localStorage.setItem('localData', cache);
-      console.log('set localStorage');
+      console.log('got it out of json');
 
     });
   }
