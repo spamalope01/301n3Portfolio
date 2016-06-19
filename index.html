@@ -12,7 +12,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
     <script id="myWork" type="text/x-handlebars-template">
-      {{#each projects}}
       <section class="imageProj">{{{image}}}</section>
       <section class="projectTitle">{{{title}}}</section>
       <section class="clientName">{{{client}}}</section>
@@ -20,7 +19,6 @@
       <section class="techUsed">{{{tech}}}</section>
       <section class="projectDescription">{{{description}}}</section>
       <hr />
-      {{/each}}
     </script>
   </head>
   <body>
@@ -40,13 +38,10 @@
     <main>
       <section id="home" class="tab-content">
         <section id="workDone">
-          <!-- <section class="template" data-category="clientWork">
-            <section class="imageProj"></section>
-            <section class="projectTitle"></section>
-            <section class="clientName"></section>
-            <section class="techUsed"></section>
-            <section class="projectDescription"></section>
-        </section> -->
+          <p>
+            this is a p about my work
+          </p>
+
       </section>
       </section>
         <section id="about" class="tab-content">
@@ -65,8 +60,8 @@
         <a  href="https://twitter.com/jdaniel_author" target="_blank"><img class="socmedia" src="IMGS/Twitter icon.png" alt="" /></a>
       </div>
     </footer>
-    <!-- <script src="Scripts/projects.js"></script> -->
-    <script src="Scripts/app.js"></script>
+    <script src="Scripts/projects.js"></script>
     <script src="Scripts/projView.js"></script>
+    <!-- <script>Projects.fetchAll();</script> -->
   </body>
 </html>
