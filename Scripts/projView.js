@@ -27,8 +27,10 @@
   };
 
   booksView.initBookInfo = function() {
-    Books.selectOnes();
-    Books.render(Books.select);
+    Books.select.forEach(function(a){
+      console.log(Books.select);
+      $('.thingsToKnow').append(a.toHtml());
+    });
   };
 
   $(document).ready(function() {
@@ -37,4 +39,5 @@
     Projects.fetchAll();
   });
   module.projControl = projControl;
+  module.booksView = booksView;
 })(window);

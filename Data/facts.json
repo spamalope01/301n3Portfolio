@@ -1,30 +1,30 @@
 [
   {
-    "title":"<h1>The Alienist</h1>",
-    "author":"<h3>By: <span class='authorSpan'>Caleb Carr</span></h3>",
-    "genre":"Historical Thriller",
-    "description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-    "pages":"<span>Length:</span> xxxpages",
-    },
-    {
-      "title":"<h1>It</h1>",
-      "author":"<h3>By: <span class='authorSpan'>Stephen King</span></h3>",
-      "genre":"Horror",
-      "description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
-      "pages":"<span>Length:</span> xxxpages",
-    },
-    {
-      "title":"<h1>The Girl Next Door</h1>",
-      "author":"<h3>By: <span class='authorSpan'>Jack Ketchum</span></h3>",
-      "genre":"Horror",
-      "description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
-      "pages":"<span>Length:</span> xxxpages",
-    },
-    {
-      "title":"<h1>Harry Potter (all of them)</h1>",
-      "author":"<h3>By: <span class='authorSpan'>JK Rowling</span></h3>",
-      "genre":"Fantasy",
-      "description":"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
-      "pages":"<span>Length:</span> xxxpages",
-    }
-  ]
+    "title": "<h1>The Alienist</h1>",
+    "author": "<h3>By: <span class='authorSpan'>Caleb Carr</span></h3>",
+    "genre": "Historical Thriller",
+    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    "pages": "<span>Length:</span> xxxpages"
+  },
+  {
+    "title": "<h1>It</h1>",
+    "author": "<h3>By: <span class='authorSpan'>Stephen King</span></h3>",
+    "genre": "Horror",
+    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+    "pages": "<span>Length:</span> xxxpages"
+  },
+  {
+    "title": "<h1>The Girl Next Door</h1>",
+    "author": "<h3>By: <span class='authorSpan'>Jack Ketchum</span></h3>",
+    "genre": "Horror",
+    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+    "pages": "<span>Length:</span> xxxpages"
+  },
+  {
+    "title": "<h1>Harry Potter (all of them)</h1>",
+    "author": "<h3>By: <span class='authorSpan'>JK Rowling</span></h3>",
+    "genre": "Fantasy",
+    "description": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+    "pages": "<span>Length:</span> xxxpages"
+  }
+]

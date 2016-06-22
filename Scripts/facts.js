@@ -25,38 +25,41 @@
   };
 
   Books.display = function(arr) {
-    arr.forEach(function(b) {
-      $('.thingsToKnow').append(b.toHtml());
+    arr.forEach(function(a) {
+      $('.thingsToKnow').append(a.toHtml());
     });
   };
 
+// Using .reduce to apply functionality of both .map and .reduce.
   Books.selectOnes = function(){
-    Books.fewer = Books.all.reduce(function(literature, ele) {
+    Books.select = Books.all.reduce(function(literature, ele) {
       if(ele.category === "Horror") {
         literature.push(new Books(ele));
       }
       return literature;
     }, []);
+    Books.display(Books.select);
   };
+
 
   Books.getAll = function() {
     if (localStorage.bookStuff) {
-      Books.loadAll(JSON.parse(localStorage.bookStuff));
+      Books.createAll(JSON.parse(localStorage.bookStuff));
       booksView.initBookInfo();
-
     } else {
-      console.log('the else has fired');
       $.getJSON('Data/facts.json', function(bookStuff) {
-        Books.display(bookStuff);
-        var storage = JSON.stringify(data);
+        Books.createAll(bookStuff);
+        var storage = JSON.stringify(bookStuff);
         localStorage.setItem('bookStuff', storage);
         booksView.initBookInfo();
       });
     }
   };
 
+
   $(document).ready(function() {
     Books.getAll();
+    Books.selectOnes();
   });
   module.Books = Books;
 })(window);
