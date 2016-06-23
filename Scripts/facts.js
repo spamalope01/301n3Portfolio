@@ -22,6 +22,16 @@
     data.forEach(function(ele) {
       Books.all.push(new Books(ele));
     });
+    Books.filterDown();
+  };
+
+  Books.filterDown = function(){
+    Books.select = Books.all.reduce(function(literature, ele){
+      if(ele.genre === 'Horror') {
+        literature.push(ele);
+      }
+      return literature;
+    }, Books.select);
   };
 
   Books.display = function(arr) {
@@ -31,15 +41,7 @@
   };
 
 // Using .reduce to apply functionality of both .map and .reduce.
-  Books.selectOnes = function(){
-    Books.select = Books.all.reduce(function(literature, ele) {
-      if(ele.category === "Horror") {
-        literature.push(new Books(ele));
-      }
-      return literature;
-    }, []);
-    Books.display(Books.select);
-  };
+        // the above line may be one problem.  in the sample code, it's a.push({actorName: b.actor, yearsPlayed: mathhere.})  they're defining the new object there, so i think i need to redefine the book object that is going into books.select.  OR, i need to replace books.select = with a var, then below this, reassign the var to books.select.    i don't have to declare books.select as an empty array globally...because doing this and assigning it to books.select will overwrite the value anyway.  so just on line 35, do var books.select = and go on with the thing.
 
 
   Books.getAll = function() {
@@ -59,7 +61,6 @@
 
   $(document).ready(function() {
     Books.getAll();
-    Books.selectOnes();
   });
   module.Books = Books;
 })(window);
