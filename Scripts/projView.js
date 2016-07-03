@@ -5,14 +5,14 @@
   var booksView = {};
 
 
-  projControl.navDisplayToggle = function() {
-    $('.globalNav').on('click', 'li', function() {
-      $('.tab-content').hide();
-      $('#' + $(this).data('content')).show();
-    });
-
-    $('.globalNav .tab:first').click();
-  };
+  // projControl.navDisplayToggle = function() {
+  //   $('.globalNav').on('click', 'li', function() {
+  //     $('.tab-content').hide();
+  //     $('#' + $(this).data('content')).show();
+  //   });
+  //
+  //   $('.globalNav .tab:first').click();
+  // };
 
   projControl.navBurgerShow = function() {
     $('.icon-menu').on('click', function() {
@@ -34,9 +34,9 @@
   };
 
   $(document).ready(function() {
-    projControl.navDisplayToggle();
+    // projControl.navDisplayToggle();
     projControl.navBurgerShow();
-    Projects.fetchAll();
+    // Projects.fetchAll();
   });
   module.projControl = projControl;
   module.booksView = booksView;
