@@ -38,6 +38,7 @@
     projControl.navBurgerShow();
     // Projects.fetchAll();
   });
+
   module.projControl = projControl;
   module.booksView = booksView;
 })(window);
