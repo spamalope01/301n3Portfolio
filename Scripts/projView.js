@@ -36,6 +36,8 @@
   $(document).ready(function() {
     // projControl.navDisplayToggle();
     projControl.navBurgerShow();
+    repos.requestRepos();
+    
     // Projects.fetchAll();
   });
 

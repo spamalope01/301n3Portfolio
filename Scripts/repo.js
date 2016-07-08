@@ -11,8 +11,13 @@
       success: function(data) {
         repos.all = data;
       }
+    }).done(callback);
+  };
+
+  repos.with = function(attr) {
+    return repos.all.filter(function(repo){
+      return repo[attr];
     });
-    callback();
   };
 
   module.repos = repos;
