@@ -20,7 +20,11 @@
       <section class="projectDescription">{{{description}}}</section>
       <hr />
     </script>
-    <!-- NEED A NEW HANDLEBARS TEMPLATE FOR THE MAP AND REDUCE THING -->
+    <script id="gHub" type="text/x-handlebars-template">
+      <section>Description: {{description}}</section>
+      <section>Language: {{language}}</section>
+      <section>Created: {{created_at}}</section>
+    </script>
     <script id="thingsMe" type="text/x-handlebars-template">
       <section class="bookTitle">{{{title}}}</section>
       <section class="bookAuthor">{{{author}}}</section>
@@ -49,12 +53,14 @@
       </section>
       </section>
         <section class="tab-content about">
+          <section id="repos">
+            <ul></ul>
+          </section>
          <h1>About Me</h1>
          <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Zonbi tattered for solum oculi eorum defunctis go lum cerebro. Nescio brains an Undead zombies. Sicut malus putrid voodoo horror. Nigh tofth eliv ingdead.
 
         Cum horribilem walking dead resurgere de crazed sepulcris creaturis, zombie sicut de grave feeding iride et serpens. Pestilentia, shaun ofthe dead scythe animated corpses ipsa screams. Pestilentia est plague haec decaying ambulabat mortuos. Sicut zeder apathetic malus voodoo. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis. Alii missing oculis aliorum sicut serpere crabs nostram. Putridi braindead odores kill and infect, aere implent left four dead.</p>
       </section>
-      <!-- NEED A SECTION THAT THE NEW HandlebarsTEMPLATE WILL PUSH TO -->
       <section class="tab-content thingsToKnow about">
         <h1>Some of My Favorite Books</h1>
       </section>
@@ -68,12 +74,15 @@
         <a  href="https://twitter.com/jdaniel_author" target="_blank"><img class="socmedia" src="IMGS/Twitter icon.png" alt="" /></a>
       </div>
     </footer>
+    <script src="/Scripts/githubToken.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
     <script src="Scripts/projects.js"></script>
     <script src="Scripts/projView.js"></script>
-    <script src="Scripts/aboutController.js"></script>
     <script src="Scripts/projController.js"></script>
     <script src="Scripts/facts.js"></script>
-    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="Scripts/repo.js"></script>
+    <script src="Scripts/repoView.js"></script>
+    <script src="Scripts/aboutController.js"></script>
     <script src="Scripts/routes.js"></script>
   </body>
 </html>

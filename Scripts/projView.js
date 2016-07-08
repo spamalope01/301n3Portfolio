@@ -36,8 +36,11 @@
   $(document).ready(function() {
     // projControl.navDisplayToggle();
     projControl.navBurgerShow();
+    repos.requestRepos();
+    
     // Projects.fetchAll();
   });
+
   module.projControl = projControl;
   module.booksView = booksView;
 })(window);
