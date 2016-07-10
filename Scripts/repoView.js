@@ -8,15 +8,15 @@
     $about.show().siblings().hide();
   };
 
-    repoView.index = function() {
-      var render = Handlebars.compile($('#gHub').html());
-      repoShow();
-      console.log('compiled the handlebars');
+  repoView.index = function() {
+    var render = Handlebars.compile($('#gHub').html());
+    repoShow();
+    console.log('compiled the handlebars');
 
-      $('#repos ul').append(
-        repos.with('name').map(render)
-      );
-    };
+    $('#repos ul').append(
+      repos.with('name').map(render)
+    );
+  };
 
   module.repoView = repoView;
 })(window);
