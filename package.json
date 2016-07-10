@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/spamalope01/301n3Portfolio/issues"
   },
-  "homepage": "https://github.com/spamalope01/301n3Portfolio#readme"
+  "homepage": "https://github.com/spamalope01/301n3Portfolio#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
