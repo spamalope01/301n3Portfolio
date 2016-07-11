@@ -27,10 +27,11 @@
   };
 
 
-  Projects.fetchAll = function() {
+  Projects.fetchAll = function(ctx, next) {
     if (localStorage.rawData) {
       Projects.loadAll(JSON.parse(localStorage.rawData));
-      projControl.initIndexPage();
+      // projControl.initIndexPage();
+      next();
 
     } else {
       $.getJSON('Data/projects.json', function(rawData) {

@@ -4,8 +4,10 @@
   projectsController.index = function() {
     $('.tab-content').hide();
     $('#home').show();
-
   };
 
   module.projectsController = projectsController;
 })(window);
+
+
+// projControl.initIndexPage

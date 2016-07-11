@@ -3,7 +3,7 @@
 
   repos.all = [];
 
-  repos.requestRepos = function(callback) {
+  repos.requestRepos = function(next) {
     $.ajax({
       url: 'github/user/repos',
       type: 'GET',
@@ -11,7 +11,7 @@
       success: function(data) {
         repos.all = data;
       }
-    }).done(callback);
+    }).done(next());
   };
 
   repos.with = function(attr) {
