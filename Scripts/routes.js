@@ -1,4 +1,6 @@
 page('/', projectsController.index,
+projControl.fetchAll,
+projControl.loadAll,
 projControl.initIndexPage);
 
 page('/about', aboutController.index);

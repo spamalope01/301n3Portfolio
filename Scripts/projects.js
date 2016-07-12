@@ -38,7 +38,8 @@
         Projects.loadAll(rawData);
         var cache = JSON.stringify(rawData);
         localStorage.setItem('rawData', cache);
-        projControl.initIndexPage();
+        // projControl.initIndexPage();
+        next();
       });
     }
   };
