@@ -3,15 +3,15 @@
 
   repos.all = [];
 
-  repos.requestRepos = function(callback) {
+  repos.requestRepos = function(next) {
     $.ajax({
-      url: 'https://api.github.com/users/spamalope01/repos',
+      url: 'github/user/repos',
       type: 'GET',
-      headers: {'Authorization': 'token ' + GITHUB_TOKEN},
+      // headers: {'Authorization': 'token ' + GITHUB_TOKEN},
       success: function(data) {
         repos.all = data;
       }
-    }).done(callback);
+    }).done(next());
   };
 
   repos.with = function(attr) {
